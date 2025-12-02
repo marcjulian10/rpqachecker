@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modules & Features Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Modules&Features Checker</h1>
+    <select id="categorySelect">
+        <option value="essentials">Essential</option>
+        <option value="concierge">Concierge</option>
+        <option value="mirror">Mirror</option>
+    </select>
+    <div class="checkbox-container">
+    <label>
+        <input type="checkbox" id="rentersPropertyBox"> eRenterPlan Property Box Checked?
+    </label>
+    </div>
+    <div class="button-group">
+        <button id="scanMirrorBtn" class="blue-btn" style="display:none;">Scan Reference Site</button>
+        <button id="checkBtn">Check Settings</button>
+        <button id="exportBtn">Export CSV</button>
+    </div>
+ 
+    <div id="scanStatus" style="margin-top:5px; font-size:12px; color:blue; text-align:center;"></div>
+ 
+    <div id="progressContainer" style="display:none;">
+        <div id="progressBar">0%</div>
+    </div>
+ 
+    <div id="errorLog"></div>
+ 
+    <script src="popup.js"></script>
+</body>
+</html>
